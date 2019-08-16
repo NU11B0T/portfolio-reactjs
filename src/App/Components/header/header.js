@@ -12,7 +12,7 @@ export class Header extends Component {
                 <div class="main-nav">
                     <div>+Add</div>
                     <img src={mail} alt='' />
-                    <div>Mark Henry</div>
+                    <div>Mukesh</div>
                     <img src={notification} alt='' />
                 </div>
             </div>
