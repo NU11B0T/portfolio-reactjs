@@ -1,0 +1,83 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">');
+.Profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5%;
+  margin: 15% 2% 2% 2%;
+  background-color: #f5f6fa;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Profile-container .Name-label {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.Profile-container .Email-label {
+  color: #8395a7;
+  font-size: 12px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.Profile-container .Fullname-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.Profile-container .Email-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  margin-bottom: 15px;
+}
+
+.Profile-container .Phone-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  margin-bottom: 15px;
+}
+
+.Profile-container .Company-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  margin-bottom: 15px;
+}
+
+.Profile-container .Address-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.Profile-container .Field-label {
+  color: #8395a7;
+  font-size: 13px;
+}
+
+.Profile-container .Value-label {
+  margin: auto;
+  font-size: 13px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=profile.css.map */

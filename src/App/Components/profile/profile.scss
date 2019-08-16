@@ -1,0 +1,72 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">');
+
+
+
+.Profile-container{
+    display: flex;
+    margin: 5%;
+    margin: 15% 2% 2% 2%;
+    background-color: #f5f6fa;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    .Name-label{
+        margin-top: 20px;
+        font-weight: bold;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .Email-label{
+        color: #8395a7;
+        font-size: 12px;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    
+    
+
+    .Fullname-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+    }
+    .Email-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-bottom: 15px;
+        
+    }
+    .Phone-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-bottom: 15px;
+        
+    }
+    .Company-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        margin-bottom: 15px;
+        
+    }
+    .Address-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        
+    }
+
+    .Field-label{
+    color: #8395a7;
+    font-size: 13px;
+    }
+
+    .Value-label{
+        margin: auto;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+}

@@ -1,0 +1,64 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">');
+.Main-container {
+  margin-top: 70px;
+  margin-left: 160px;
+  position: absolute;
+}
+
+.Contactheader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Contactheader-container img {
+  width: 32px;
+  height: 32px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Contactheader-container .Contact-text-container {
+  margin-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 65% 35%;
+      grid-template-rows: 65% 35%;
+}
+
+.Contactheader-container .Contact-text-container .Contact-text {
+  height: 60%;
+  font-size: 30px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: bold;
+}
+
+.Contactheader-container .Contact-text-container .Welcome-text {
+  font-size: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #a5b1c2;
+}
+
+.Contactheader-container .Sortby-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 30px;
+}
+
+.Contactheader-container .Sortby-container .Sortby-text {
+  color: #a5b1c2;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+}
+
+.Contactheader-container .Sortby-container .Date-text {
+  margin-left: 5px;
+  font-weight: 600;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+/*# sourceMappingURL=Layout.css.map */

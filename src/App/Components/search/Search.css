@@ -1,0 +1,153 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">');
+.Contact-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5em;
+  margin-top: 10px;
+}
+
+.Contact-container .SA-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Contact-container .SA-container .Search-container {
+  background-color: #f5f6fa;
+  border-radius: 10px;
+}
+
+.Contact-container .SA-container .Search-container .Search-input {
+  height: 30px;
+  background-color: #f5f6fa;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.Contact-container .SA-container .Search-container img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.Contact-container .SA-container .Add-button {
+  width: 150px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FA4F44), color-stop(44.24%, #EC6958), to(#F52F6C));
+  background: linear-gradient(180deg, #FA4F44 0%, #EC6958 44.24%, #F52F6C 100%);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.Contact-container .SA-container .Add-button img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.Contact-container .List-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 3fr;
+      grid-template-columns: 1fr 1fr 3fr;
+  background-color: #f5f6fa;
+  height: 30px;
+  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.Contact-container .List-header .Plus-logo {
+  width: 15px;
+  height: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 15px;
+}
+
+.Contact-container .List-header .BasicInfo-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #8395a7;
+  font-size: 15px;
+}
+
+.Contact-container .List-header .Company-text {
+  margin: auto;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #8395a7;
+  font-size: 15px;
+}
+
+.Contact-container .Contact-card {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 20px;
+  -ms-grid-columns: .2fr 1fr 1fr;
+      grid-template-columns: .2fr 1fr 1fr;
+}
+
+.Contact-container .Contact-card .Checkbox-input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+}
+
+.Contact-container .Contact-card .CustomerInfo-conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Contact-container .Contact-card .CustomerInfo-conatiner .avatar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 8px;
+}
+
+.Contact-container .Contact-card .CustomerInfo-conatiner .CustomerInfo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Contact-container .Contact-card .CustomerInfo-conatiner .CustomerInfo .Contact-name {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.Contact-container .Contact-card .CustomerInfo-conatiner .CustomerInfo .Contact-email {
+  font-size: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #222f3e;
+}
+
+.Contact-container .Contact-card .Contact-company {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Contact-container .Contact-card:active {
+  background-color: #f5f6fa;
+}
+/*# sourceMappingURL=Search.css.map */
