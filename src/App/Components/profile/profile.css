@@ -16,6 +16,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 450px;
 }
 
 .Profile-container .Name-label {

@@ -32,15 +32,15 @@
 
 .Header-container .main-nav div {
   padding: 10px 15px;
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 10px;
 }
 
 .Header-container .main-nav img {
   background-color: #fff;
   margin: 0;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   margin-right: 10px;
 }
 /*# sourceMappingURL=header.css.map */
