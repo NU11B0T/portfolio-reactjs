@@ -1,0 +1,36 @@
+.Bubble-container {
+  height: 400px;
+  width: 500px;
+  border: 1px red solid;
+}
+
+.chart-zoom-in {
+  height: 400px;
+  width: 500px;
+  border: 1px red solid;
+  -webkit-animation: bubble-chart-zoom-in 1s linear;
+          animation: bubble-chart-zoom-in 1s linear;
+}
+
+@-webkit-keyframes bubble-chart-zoom-in {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bubble-chart-zoom-in {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=Bubble.css.map */

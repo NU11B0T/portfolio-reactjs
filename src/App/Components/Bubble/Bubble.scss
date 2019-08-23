@@ -1,0 +1,25 @@
+.Bubble-container {
+    height: 400px;
+    width: 500px;
+    border: 1px red solid;
+
+}
+
+.chart-zoom-in{
+
+    height: 400px;
+    width: 500px;
+    border: 1px red solid;
+    animation: bubble-chart-zoom-in 1s linear;
+
+    @keyframes bubble-chart-zoom-in {
+        from {
+          transform: scale(0.1);
+        }
+        to {
+          transform: scale(1);
+        }
+        
+      }
+
+}
