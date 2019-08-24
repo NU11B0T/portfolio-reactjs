@@ -4,19 +4,37 @@ import data from '../../data/data';
 import countries from '../../data/world_countries.json';
 import './Geo.css';
 import Bubble from '../Bubble/Bubble';
+import backLogo from '../../Assets/back.svg';
 
 class Geo extends Component {
 
     state={
         geoContainer: 'Geo-container',
+        backButtonStyle: 'disable-backbutton',
+        bubbleChartStyle: 'Bubble-container',
+        bubbleChartData:''
     }
 
     openBubble(e){
-        // console.log("e",e);
-        this.setState({ geoContainer: 'zoom'})
+        console.log("e",e.data);
+        if(e.data !== undefined){
+            this.setState({ geoContainer: 'zoom'})
+
+            setTimeout(() =>{
+            this.setState({ geoContainer: 'no-Geo-chart', 
+                            bubbleChartData: e.data, 
+                            bubbleChartStyle: "chart-fade-in", 
+                            backButtonStyle: 'backbutton-container'  })
+            },1000)
+        }
+    }
+
+    closeBubble(){
+        this.setState({ geoContainer: 'Geo-container', bubbleChartStyle: "chart-fade-out", 
+                        backButtonStyle: 'disable-backbutton',})
 
         setTimeout(() =>{
-        this.setState({ geoContainer: 'no-Geo-chart'})
+        this.setState({ bubbleChartStyle: "Bubble-container"  })
         },1000)
     }
 
@@ -24,9 +42,10 @@ class Geo extends Component {
         return (
             <div>
                 <div className= {this.state.geoContainer}
-                    onClick={(e) => this.openBubble(e)}>
+                    // onClick={(e) => this.openBubble(e)}
+                    >
                     <ResponsiveChoropleth
-                            onClick = {(e) => console.log(e)}
+                            onClick = {(e) => this.openBubble(e)}
                             data={data}
                             colors={['#ffb01d', '#ffa020', '#ff9221', '#ff8424', '#ff7425', '#fc5e2f', '#f94b3a', '#f63a48',]}
                             features={countries.features}
@@ -68,8 +87,13 @@ class Geo extends Component {
                             ]}
                         />
                 </div>
-            
-            <Bubble />
+
+            <div className={this.state.backButtonStyle} onClick={() => this.closeBubble() }>
+                <img src={backLogo} alt={'back'} />
+                <div>back to world</div>
+            </div>
+
+            <Bubble bubbleChartStyle={this.state.bubbleChartStyle} bubbleChartData={this.state.bubbleChartData} />
 
             </div>
         )

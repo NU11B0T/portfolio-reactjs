@@ -1,30 +1,10 @@
 .Table-container {
   position: relative;
+  margin: 10px;
+  width: 50%;
 }
 
-.Table-container table {
-  margin: auto;
-  margin-top: 10px;
-  border-spacing: 0;
-  border: 1px solid black;
-}
-
-.Table-container table tr :last-child td {
-  border-bottom: 0;
-}
-
-.Table-container table th,
-.Table-container table td {
-  margin: 0;
-  padding: 0.5rem;
-  padding-right: 5rem;
-  padding-left: 1rem;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.Table-container table th :last-child,
-.Table-container table td :last-child {
-  border-right: 0;
+.cell-style {
+  padding: 100px;
 }
 /*# sourceMappingURL=Records.css.map */
