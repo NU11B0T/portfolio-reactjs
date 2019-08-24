@@ -1,6 +1,13 @@
 ### Heat Map
 Link - https://portfolio-mukesh-heatmap.netlify.com
 
+## Installation
+```bash
+npm install
+
+npm run start
+```
+
 ### Points
 1. A World Country heat map.
     - [ ] Darkest for the country with highest data point  
