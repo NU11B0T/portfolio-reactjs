@@ -12,10 +12,6 @@ import "react-table/react-table.css";
 export default class Records extends Component {
 
     
-    openbubblechart(row){
-        console.log('works',row)
-    }
-
     render() {
         return(
             <div className='Table-container'>
@@ -23,7 +19,6 @@ export default class Records extends Component {
                     data={data}
                     columns={[
                         {
-                            // Header: 'Expand',
                             columns: [
                             {
                                 Header: () => (<span>&#x22C4;</span>),
@@ -79,8 +74,7 @@ export default class Records extends Component {
                           }
                         }
                       }}
-                    SubComponent={v => console.log(v) || (
-                        // <div> {v.original.children.map((cities) => console.log(cities))  }</div>
+                    SubComponent={v =>  (
                         <div style={{ padding: "20px" }}>
                             <ReactTable 
                             data={v.original.children}

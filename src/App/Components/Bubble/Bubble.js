@@ -13,14 +13,11 @@ export default class Bubble extends Component {
     render() {
         
         var chartDate = (data.filter((d) => { return d.id === this.props.bubbleChartData.id }))
-        console.log(chartDate)
 
         if (chartDate.length === 0){
-            console.log('inside')
             chartDate = data[0]
         }
         else{
-            // console.log('outside', chartDate1[0])
             chartDate = chartDate[0]
         }
         return (

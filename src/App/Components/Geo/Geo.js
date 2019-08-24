@@ -16,7 +16,6 @@ class Geo extends Component {
     }
 
     openBubble(e){
-        console.log("e",e.data);
         if(e.data !== undefined){
             this.setState({ geoContainer: 'zoom'})
 
@@ -45,7 +44,6 @@ class Geo extends Component {
         return (
             <div>
                 <div className= {this.state.geoContainer}
-                    // onClick={(e) => this.openBubble(e)}
                     >
                     <ResponsiveChoropleth
                             onClick = {(e) => this.openBubble(e)}

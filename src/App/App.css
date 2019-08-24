@@ -1,8 +1,7 @@
 .App {
-  /* background-color: #1A2A55; */
   height: 100vh;
   display: flex;
-  /* text-align: center; */
+
 }
 
 @media only screen and (max-width: 768px) {

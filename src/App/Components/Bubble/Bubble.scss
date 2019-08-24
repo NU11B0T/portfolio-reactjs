@@ -1,13 +1,5 @@
 .Bubble-container {
     display: none;
-    // position: absolute;
-    // top: 20%;
-    // left: 10%;
-    // height: 400px;
-    // width: 500px;
-    // animation: bubble-chart-fade-out 1s linear;
-    // border: 1px red solid;
-
 
 }
 
@@ -71,7 +63,6 @@
     left: 10%;
     height: 40%;
     width: 75%;
-    // border: blue 2px solid;
     animation: bubble-chart-zoom-in 1s linear;
 
     @keyframes bubble-chart-zoom-in {
