@@ -11,4 +11,14 @@
   padding: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .Table-container{
+
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+  }
+}
 

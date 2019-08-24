@@ -66,4 +66,67 @@
   opacity: 0.1;
   pointer-events: none;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .Geo-container {
+    margin: 0;
+    height: 50vh;
+    width: 99vw;
+    border: 2px;
+  }
+  .backbutton-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+  }
+  .backbutton-container img {
+    height: 30px;
+    width: 30px;
+  }
+  .backbutton-container div {
+    margin-left: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .disable-backbutton {
+    display: none;
+  }
+  .zoom {
+    margin: 0;
+    height: 50vh;
+    width: 99vw;
+    border: 2px;
+    -webkit-animation: zoom-in 1 1s linear;
+            animation: zoom-in 1 1s linear;
+  }
+  @-webkit-keyframes zoom-in {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.1;
+    }
+  }
+  @keyframes zoom-in {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.1;
+    }
+  }
+  .no-Geo-chart {
+    margin: 0;
+    height: 50vh;
+    width: 99vw;
+    border: 2px;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+}
 /*# sourceMappingURL=Geo.css.map */

@@ -39,6 +39,9 @@ class Geo extends Component {
     }
 
     render() {
+
+        const projectionScaleValue = window.innerWidth <= 768 ? 60 : 150
+
         return (
             <div>
                 <div className= {this.state.geoContainer}
@@ -54,7 +57,7 @@ class Geo extends Component {
                             unknownColor="#666666"
                             label="properties.name"
                             valueFormat=".2s"
-                            projectionScale={150}
+                            projectionScale={projectionScaleValue}
                             projectionTranslation={[ 0.5, 0.5 ]}
                             projectionRotation={[ 0, 0, 0 ]}
                             enableGraticule={false}
@@ -67,9 +70,9 @@ class Geo extends Component {
                                     direction: 'column',
                                     justify: false,
                                     translateX: 0,
-                                    translateY: 0,
+                                    translateY: 35,
                                     itemWidth: 100,
-                                    itemHeight: 10,
+                                    itemHeight: 9,
                                     itemsSpacing: 4,
                                     symbolSize: 20,
                                     itemDirection: 'left-to-right',
