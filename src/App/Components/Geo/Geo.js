@@ -57,7 +57,7 @@ class Geo extends Component {
                             projectionScale={150}
                             projectionTranslation={[ 0.5, 0.5 ]}
                             projectionRotation={[ 0, 0, 0 ]}
-                            enableGraticule={true}
+                            enableGraticule={false}
                             graticuleLineColor="#dddddd"
                             borderWidth={0.5}
                             borderColor="#152538"

@@ -4,7 +4,6 @@
   height: 99vh;
   width: 70vw;
   border: 2px;
-  border: 2px solid blue;
 }
 
 .backbutton-container {
@@ -37,7 +36,6 @@
   height: 99vh;
   width: 70vw;
   border: 2px;
-  border: 2px solid blue;
   -webkit-animation: zoom-in 1 1s linear;
           animation: zoom-in 1 1s linear;
 }
@@ -65,7 +63,6 @@
   height: 99vh;
   width: 70vw;
   border: 2px;
-  border: 2px solid blue;
   opacity: 0.1;
   pointer-events: none;
 }
