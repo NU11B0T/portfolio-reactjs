@@ -55,7 +55,7 @@ export default class Records extends Component {
                                 cursor: "pointer",
                                 textAlign: "center",
                             },
-                            
+
                         },
                         {
                             Header: 'Score',
@@ -63,15 +63,15 @@ export default class Records extends Component {
                         },
 
                     ]}
+                    
                     showPagination ={false}
                     defaultPageSize= {5}
                     getTdProps={(state, rowInfo, column, instance) =>{
                         return {
                           onClick: (e, handleOriginal) => {
-
-                            // console.log('It was in this row:', rowInfo)
-
+                            if(column.Header ==="Country" ){
                             this.props.sendRecord(rowInfo.original)
+                          }
                      
                             if (handleOriginal) {
                               handleOriginal()
@@ -79,9 +79,6 @@ export default class Records extends Component {
                           }
                         }
                       }}
-                    // className= {'cell-style'}
-                    // style={{ padding: '10px'}}
-                    // getProps={(e) => console.log(e)}
                     SubComponent={v => console.log(v) || (
                         // <div> {v.original.children.map((cities) => console.log(cities))  }</div>
                         <div style={{ padding: "20px" }}>
