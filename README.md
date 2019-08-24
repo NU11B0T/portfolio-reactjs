@@ -1,5 +1,5 @@
-## Checkout  Milestone
-
+### Heat Map
+Link - https://portfolio-mukesh-heatmap.netlify.com
 
 ### Points
 1. A World Country heat map.
@@ -15,3 +15,10 @@
     - [ ] should zoom in to that country.
     - [ ] show cities and the table below should also change to show cities and their data.
     - [ ] Please do have a back button or zoom out button
+    
+    
+### Desktop
+![heatmap-desktop](./Example/heatmap-desktop.gif)
+
+### Mobile
+![heatmap-mobile](./Example/heatmap-mobile.gif)
